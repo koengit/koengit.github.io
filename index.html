@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>DIT980 - Discrete Mathematics for Computer Scientists - 2018</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+<style>
+html, body {
+font-family: "Actor", sans-serif; font-size: 18px
+}
+</style>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<body>
+
+<!-- TOP NAVIGATION BAR -->
+<div class="w3-top">
+<div class="w3-bar w3-black w3-card-2">
+<a href="index.html" class="w3-hover-green w3-bar-item w3-button w3-padding-large">HOME</a>
+<a href="schedule.html" class="w3-hover-green w3-bar-item w3-button w3-padding-large w3-hide-small">SCHEDULE</a>
+<a href="exercises.html" class="w3-hover-green w3-bar-item w3-button w3-padding-large w3-hide-small">EXERCISES</a>
+<a href="assignments.html" class="w3-hover-green w3-bar-item w3-button w3-padding-large w3-hide-small">ASSIGNMENTS</a>
+<a href="book.html" class="w3-hover-green w3-bar-item w3-button w3-padding-large w3-hide-small">BOOK</a>
+<a href="forum.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red w3-hide-medium w3-hide-small w3-right">FORUM</a>
+<a href="timeedit.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red w3-hide-medium w3-hide-small w3-right">TIME-EDIT</a>
+<a href="fire.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red w3-hide-medium w3-hide-small w3-right">FIRE</a>
+<a id="kursMenuButton" class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right w3-hover-green" href="javascript:void(0)" onclick="document.getElementById('kursMenu').classList.toggle('w3-show');" title="Toggle Menu"><i class="fa fa-bars"></i></a>
+</div>
+</div>
+
+<!-- NAVIGATION MENU (for small screens) -->
+<div id="kursMenu" class="w3-modal w3-hide" style="top:46px; padding-top:0px" onclick="document.getElementById('kursMenu').classList.remove('w3-show');">
+<div class="w3-bar-block w3-indigo">
+<a href="schedule.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium">SCHEDULE</a>
+<a href="exercises.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium">EXERCISES</a>
+<a href="assignments.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium">ASSIGNMENTS</a>
+<a href="book.html" class="w3-bar-item w3-button w3-padding-large w3-hide-medium">BOOK</a>
+<a href="forum.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red">FORUM</a>
+<a href="timeedit.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red">TIME-EDIT</a>
+<a href="fire.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red">FIRE</a>
+</div>
+</div>
+
+<div id="content" class="w3-content w3-padding-16" style="max-width:2000px;margin-top:46px">
+<!-- BEGIN page content -->
+<div class="w3-row-padding">
+<div class="w3-col l9">
+<p class="w3-center"><strong>this week</strong></p>
+<div class="w3-cell-row">
+<div class="w3-cell w3-border-white w3-khaki w3-hover-green w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='lec-hilbert.html'">
+<p><strong>Mon, Sep  3</strong> (10-12 in EB) <br />
+Lecture: <a href="lec-hilbert.html">Introduction</a></p>
+</div>
+<div class="w3-cell w3-border-white w3-khaki w3-hover-green w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='exer1.html'">
+<p><strong>Wed, Sep  5</strong> (13-16 in Ideläran) <br />
+Exercises: <a href="exer1.html">Sets and Functions</a></p>
+</div>
+<div class="w3-cell w3-border-white w3-khaki w3-hover-green w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='lec-logic.html'">
+<p><strong>Thu, Sep  6</strong> (10-12 in EE) <br />
+Lecture: <a href="lec-logic.html">Logic and Proofs I</a></p>
+</div>
+<div class="w3-cell w3-border-white w3-khaki w3-hover-green w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='lec-logic.html'">
+<p><strong>Fri, Sep  7</strong> (10-12 in EB) <br />
+Lecture: <a href="lec-logic.html">Logic and Proofs II</a></p>
+</div>
+</div>
+<p class="w3-center"><strong>next week</strong></p>
+<div class="w3-cell-row">
+<div class="w3-cell w3-border-white w3-light-gray w3-hover-gray w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='lec-invariants.html'">
+<p><strong>Mon, Sep 10</strong> (10-12 in EB) <br />
+Lecture: <a href="lec-invariants.html">Invariants</a></p>
+</div>
+<div class="w3-cell w3-border-white w3-light-gray w3-hover-gray w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='exer2.html'">
+<p><strong>Wed, Sep 12</strong> (13-16 in Ideläran) <br />
+Exercises: <a href="exer2.html">Logic and Proofs</a></p>
+</div>
+<div class="w3-cell w3-border-white w3-light-gray w3-hover-gray w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='lec-induction.html'">
+<p><strong>Thu, Sep 13</strong> (10-12 in EE) <br />
+Lecture: <a href="lec-induction.html">Induction</a></p>
+</div>
+<div class="w3-cell w3-border-white w3-light-gray w3-hover-gray w3-padding w3-border w3-mobile" style="width:25%" onClick="location.href='lec-sums.html'">
+<p><strong>Fri, Sep 14</strong> (10-12 in EB) <br />
+Lecture: <a href="lec-sums.html">Big Sums</a></p>
+</div>
+</div>
+<p class="w3-center"><a href="schedule.html">(show all weeks)</a></p>
+</div>
+<div class="w3-col l3">
+<p class="w3-center"><strong>news</strong></p>
+<p class="w3-container w3-padding-small w3-border-blue w3-border w3-hover-blue" onClick="location.href='answers.html'">
+<strong>Wed, Sep 5</strong><br>Published <a href="answers.html">Answers to Exercises Week 1</a>
+</p>
+</div>
+<div class="w3-col l3">
+<p class="w3-center"><strong>upcoming deadlines</strong></p>
+<p class="w3-container w3-padding-small w3-border-red w3-border w3-hover-red" onClick="location.href='assign1.html'">
+<strong>Wed, Sep 12</strong><br>First deadline <a href="assign1.html">Assignment 1 - Sets and Functions</a>
+</p>
+<p class="w3-container w3-padding-small w3-border-red w3-border w3-hover-red" onClick="location.href='assign2.html'">
+<strong>Wed, Sep 19</strong><br>First deadline <a href="assign2.html">Assignment 2 - Logic and Proofs</a>
+</p>
+<p class="w3-container w3-padding-small w3-border-red w3-border w3-hover-red" onClick="location.href='assign1.html'">
+<strong>Fri, Sep 21</strong><br>Final deadline <a href="assign1.html">Assignment 1 - Sets and Functions</a>
+</p>
+</div>
+</div>
+</div>
+<!-- END page content -->
+</div>
+</body>
+</html>
+
